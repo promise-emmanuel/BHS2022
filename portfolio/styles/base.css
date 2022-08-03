@@ -1,0 +1,301 @@
+body{
+    margin: 0;
+    padding:0;
+    max-width: 100%;
+    width:100%;
+}
+
+/* styling the header */
+footer{
+    background: rgb(60, 20, 0);
+    display: grid;
+    grid-template-columns: 1fr;
+    color:white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: .2rem; 
+}
+
+
+.header_container{
+    /* background-color: rgb(139, 91, 29); */
+    background: rgb(60, 20, 0);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: end;
+    padding: 10% 5%;    
+    width:100%;
+    margin:0;
+    z-index:200;
+    box-sizing: border-box;
+}
+#head.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+/* styling the header content */
+/* logo */
+.header_logo{
+    width: 80%;
+    max-width: 300px;
+}
+.footer_logo{
+    width: 25%;
+}
+
+/* style for download cv button */
+
+.download_cv{
+    border: 1px solid white;
+    border-radius: 50px 50px;
+    padding:.7rem;
+    background: white;
+
+}
+
+.download_cv a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* nav links */
+
+
+.header_links nav ul{
+    list-style-type: none;
+    display: none;
+    /* position: relative; */
+}
+
+.header_links ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.5rem;
+    /* border-bottom: 3px black; */
+}
+
+/* style for the nav when the munu button is toggled opened */
+nav ul.change{ 
+    display: block;
+    background: rgba(0, 0, 0);
+    /* background: rgb(128, 128, 128, 0.9); */
+    padding: 1rem 20% 29rem 0;
+    position: absolute;
+    max-width: 1000px;
+    width: 100%;
+    margin-top: 11.5%;
+    margin-left: -47%;
+    text-align: left;
+    z-index: 1000;
+}
+
+nav ul.change li {
+    padding: 1rem;
+}
+
+
+/* styling the hamburger button in the header and interacting with javascript */
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    background-color:rgb(234, 139, 139);
+    margin-right: 2em;
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color:rgb(234, 139, 139);
+}
+
+
+.main_img_container{
+    position: relative;
+    width:100%;
+    height:650px;
+    background-repeat: no-repeat;
+    background: url("../images/profile.jpg");
+    background-size:cover;
+    padding-top:4%;
+    /* margin-top: .5px; */
+}
+.sticky1{
+    margin-top: 8.5em;
+}
+
+
+#outer{
+    position:absolute;
+    width:100%;
+    height: 650px;
+    background: rgba(0,0,0,0.1);
+}
+#outer.change{
+    position:absolute;
+    width:100%;
+    height: 650px;
+    background: rgba(0,0,0,0.7);
+}
+
+/* styling the call to action in the main background */
+.details{
+    position: absolute;
+    width:80%;
+    background: rgba(0,0,0,0.8);
+    top: 50%;
+    left: 50%;
+    transform: translateY(0%) translateX(-50%);
+    color:white;
+    text-align:center;
+    padding:30px 10px;
+    border-radius: 30% 5%;
+    line-height: .5rem;
+}
+.details p, .details button{
+    font-size: 1.2em;
+    font-weight: bold;
+    /* font-family:; */
+}
+.details h2{
+    font-size: 2em;
+    font-weight: bold;
+}
+.social_image a img{
+    border-radius: 30px;
+    width:40px;
+}
+.details button{
+    margin-top: 16px;
+    border-radius: 50px 50px;
+}
+
+/* styling the other parts of the main */
+/* styling the entire backgroung and setting some permananent styless */
+.secondary{
+    padding:16px;
+    /* padding-top: 3rem;/ */
+    display:grid;
+    grid-template-columns: 1fr;
+    background: rgba(0,0,0,0.8);
+    color:white;
+}
+
+.secondary_1_child p{
+    padding:16px;
+    display:block;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+.secondary_1_child h2{
+    text-align: center;
+    text-shadow: 1px 1px 1px gray; 
+}
+/* styling the service section */
+.secondary_2_child{
+    margin-bottom: 60px;
+}
+.secondary_2_child h2{
+    text-align: center;
+    text-shadow: 1px 1px 1px gray; 
+}
+
+#skills_form{
+    display:block;
+    border: 1px solid black;
+    padding: 50px 20px;
+    width:80%;
+    margin: 0 auto;
+    background: rgb(0 0 0);
+    box-shadow:0 0 50px white;
+}
+
+form label{
+    display: block;
+    padding-top: 1rem;
+    color:white;
+    font-size: 1.2rem; 
+}
+
+form label .hy{
+    display: block;
+    text-align: end;
+    color:white;
+    /* margin-left: 20%; */
+}
+
+form label progress {
+    display: block;
+    width: 90%;
+    max-width: 100%;
+    accent-color:green;
+    margin-bottom: 20px;
+}
+
+/* styling the services section */
+.secondary_3_child{
+    display:block;
+    width:90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.service_child{
+    padding: 1.5rem 1rem;
+    border: 2px solid gray;
+    margin-bottom: 3rem;
+    background: black;
+    box-shadow:0 0 15px white;
+    /* text-align: center;     */
+}
+
+/* styling the contact section */
+#contact_form{
+    /* background: rgb(60, 20, 0); */
+    background: black;
+    padding: 10% 5%;
+    box-sizing: border-box;
+}
+#contact_form label{
+    display:block;
+}
+#contact_form label input{
+    display:block;
+    width:80%;
+    height:3.5vh;
+    border-radius: 1rem;
+}
+#contact_form input.submitBtn{
+    border: none;
+    background-color: #2c698d ;
+    color: white;
+    border-radius: 1.5rem;
+    padding: .7rem 1.5rem;
+    margin: 10% 0 0 2%;
+    width: 96%;
+    max-width: 20rem;
+    cursor: pointer; 
+}
+#contact_form label.input input:required {
+    border-left: solid 4px red;  
+}
+
+  
+#contact_form label.input input:required:valid {
+    border-bottom: solid 6px green;
+    border-left:none;
+}  
+
