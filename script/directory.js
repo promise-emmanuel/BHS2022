@@ -25,6 +25,6 @@ function myFunction() {
     
   } else {
     navBar.classList.remove("sticky");
-    navBar.classList.remove("sticky1");
+    main.classList.remove("sticky1");
   }
 }

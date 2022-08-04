@@ -1,0 +1,95 @@
+@media only screen and (min-width:59em){
+
+    .header_container{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;   
+        background: rgb(60, 20, 0); 
+        padding: 10px;
+        /* background: transparent; */
+    }
+    .header_logo{
+        width: 40%;
+    }
+    .footer_logo{
+        width: 8%;
+    }
+    
+    #hamburger_btn{
+        display:none;
+    }
+
+    #primaryNav{
+        display:flex;
+    }
+    #primaryNav li{
+        position: relative;
+    }
+    #primaryNav li a{
+        padding: 10px 37px;
+    }
+    #primaryNav li a::after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background: white;
+        bottom: -3px;
+        left: 0;
+        transition:  ease .40s;
+    }
+    #primaryNav li a:hover::after{
+        width:100%;
+    }
+    /* styling the main container */
+    .main_img_container{
+    position: none;
+    margin: 0 auto;
+    display: block;
+    }
+
+
+    /* styling the call to action in the main background */
+    .details{
+        width:35%;
+        background: rgba(0,0,0,0.8);
+        top: 0;
+        left: 75%;
+        transform: translateY(-125%) translateX(-55%);
+        color:white;
+        text-align:center;
+        padding:20px 5px;
+        border-radius:5%;
+        line-height: .5rem;
+    }
+
+
+    .main_img_container, .sticky1, #outer {
+        background: none;
+        margin: 0;
+    }
+    .hidden_image{
+        display:block;
+        width:40%;
+        margin: 0 0 0 5%;
+        /* height: 60vh; */
+        border-radius: 50% ;
+    }
+    .secondary{
+        padding:5rem 0 10rem;
+    }
+    .secondary_1_child, .secondary_2_child, .secondary_3_child, .secondary_4_child{
+        width:60%;
+        margin: 3rem auto;
+    }
+    .grid_3{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+        margin-top:50px;
+    }
+    .service_child{
+        height: 20vh;
+    }
+}

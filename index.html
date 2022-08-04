@@ -8,21 +8,23 @@
     <meta name="description" content="The Portfolio website is just a website that introduces my skills and CV to potential employers online.">
     <title>Portfolio</title>
 
-    <link rel="icon" href="" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Merriweather:ital@1&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+
     <!-- <link rel="stylesheet" href="styles/normalize6.css"> -->
     <link rel="stylesheet" href="styles/base.css">
-    <!-- <link rel="stylesheet" href="styles/medium6.css"> -->
-    <!-- <link rel="stylesheet" href="styles/large6.css"> -->
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
 
     <script type="text/javascript" src="script/directory.js" defer></script>
 
@@ -36,10 +38,7 @@
                 <img class="header_logo" src="images/logo_white_large_2.webp" alt="portfolio logo">
             </div>
 
-            <!-- download cv -->
-            <div class="download_cv">
-                <a href="">Download cv</a>
-            </div>
+            
 
             <!-- Links goes in here -->
             <div class="header_links">
@@ -53,10 +52,10 @@
                     <!-- <button id="hamburger_btn"><span>&#9776</span><span>X</span></button> -->
                     <ul id="primaryNav">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Skills</a></li>
-                        <li><a href="">Service</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#num_1">About</a></li>
+                        <li><a href="#num_2">Skills</a></li>
+                        <li><a href="#num_3">Service</a></li>
+                        <li><a href="#num_4">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -67,24 +66,33 @@
 
     <main>
         <section>
-            <div class="main_img_container" id="main1">    
+            <div class="main_img_container" id="main1"> 
+                <img class="hidden_image" src="images/profile2.webp" alt="profile picture">   
                 <div id="outer">
                     <div class="details">
                         <p>Hello, I'm</p>
                         <h2>Promise N. Igbojionu</h2>
                         <p>a creative Designer <span>from Nigeria.</span></p>
                         <div class="social_image">
-                            <a href="https://www.facebook.com" target="_blank"> <img src="https://cdn.glitch.com/78ebbaeb-2da2-43ce-b67b-ab83aa6f722e%2Ffacebook.png?v=1620882319512" alt="facebook icon"> </a> 
-                            <a href="https://www.twitter.com" target="_blank"> <img src="https://cdn.glitch.com/78ebbaeb-2da2-43ce-b67b-ab83aa6f722e%2Ftwitter.png?v=1620882316034" alt="twitter icon"> </a>         
+                            <a href="https://www.facebook.com" target="_blank"> <img src="https://img.icons8.com/fluency/344/facebook-new.png" alt="facebook icon"> </a> 
+                            <a href="https://www.youtube.com" target="_blank"> <img src="https://img.icons8.com/color/344/youtube-play.png" alt="youtube icon"> </a>     
+                            <a href="https://www.linkedin.com/in/promise-emmanuel-2019/?originalSubdomain=ng" target="_blank"><img src="https://img.icons8.com/fluency/344/linkedin-circled.png" alt="linkedin icon"> </a>      
                         </div>
-                        <button>Watch! Then Contact me</button>
+                        <div>
+                            <button>Watch! Then Contact me</button>
+                            <!-- download cv -->
+                            <div class="download_cv">
+                                <a href="images/resume_review.pdf" target="_blank">Download cv</a>
+                            </div>
+                        </div>
                     </div>
                 </div>     
             </div>
 
             <div class="secondary">
-                <div class="secondary_1_child">
+                <div class="secondary_1_child"><a id="num_1"></a>
                     <h2 class="visit">About me</h2>
+                    
                     <p>
 
                         I build dynamic & interactive mobile / desktop websites with the use of modern technologies
@@ -96,7 +104,8 @@
                     </p>
                 </div>
                 
-                <div class="secondary_2_child">
+                <div class="secondary_2_child"><a id="num_2"></a>
+
                     <h2 class="visit">My skills</h2>
                     
                     <form id="skills_form">
@@ -119,30 +128,34 @@
 
                 </div>
 
-                <div class="secondary_3_child">
+                <div class="secondary_3_child"><a id="num_3"></a>
+
                     <h2 class="visit">My Services</h2>
                     <h4>What I provide</h4>
+                    <div class="grid_3">
+                        <div class="service_child">
+                            <h3>Web Design</h3>
+                            <p>Application of new technology and techniques to create a website for you that runs across multiple devices. Just ask! </p>
 
-                    <div class="service_child">
-                        <h3>Web Design</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae nemo eum sunt voluptatum. Laboriosam, vel? </p>
-
-                    </div>
-                    <div class="service_child">
-                        <h3>Writing and Content Editing</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ea, cum quasi cumque eaque ipsum!</p>
-                    </div>
-                    <div class="service_child">
-                        <h3>Data Analysis</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ea, cum quasi cumque eaque ipsum!<p>
-                    </div>
-                    <div class="service_child">
-                        <h3>Simple Game Development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ea, cum quasi cumque eaque ipsum!</p>
+                        </div>
+                        <div class="service_child">
+                            <h3>Writing and Content Editing</h3>
+                            <p>An intermediate-level writer with several few articles in tech and business world. </p>
+                        </div>
+                        <div class="service_child">
+                            <h3>Data Analysis</h3>
+                            <p>Let us help you create a comparative data analysis of your business with the lastest technology and design.<p>
+                        </div>
+                        <div class="service_child">
+                            <h3>programming</h3>
+                            <p>Create simple programs that helps you perform useful task using latest techniques in python programming language.</p>
+                    
+                        </div>    
                     </div>
                 </div>
 
-                <div class="secondary_4_child">
+                <div class="secondary_4_child"><a id="num_4"></a>
+
                     <h2 class="visit">Contact Promise</h2>
                     <form method="get" action="thankyou.html" id="contact_form">
         
